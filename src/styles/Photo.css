@@ -1,0 +1,106 @@
+.container {
+	margin: .2em;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+}
+
+.container h4,
+.container p {
+	color: #fff;
+}
+
+.container a {
+	transition: color .1s linear;
+	-webkit-transition: color .1s linear;
+	-moz-transition: color .1s linear;
+	-o-transition: color .1s linear;
+}
+
+.container a:hover {
+	color: #fe5a76;
+}
+
+.overlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: .7em;
+	background-color: rgba(0, 0, 0, .6);
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity .2s linear;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	-o-transition: opacity .2s linear;
+}
+
+.overlay:hover {
+	opacity: 1;
+}
+
+.imageDetails {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 1em;
+}
+
+.title,
+.author,
+.container h4 {
+	text-transform: uppercase;
+}
+
+.title,
+.author {
+	color: steelblue;
+	font-weight: 600;
+}
+
+.title,
+.author,
+.textSeparator {
+	display: inline-block;
+}
+
+.author,
+.textSeparator,
+.description,
+.tags {
+	font-size: .7em;
+}
+
+.textSeparator {
+	margin: 0 .3em 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.container {
+		width: calc(50% - .4em);
+		float: left;
+	}
+
+	.container:nth-child(2n+1) {
+    clear: left;
+	}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.container {
+		width: calc(25% - .4em);
+		float: left;
+	}
+
+	.container:nth-child(2n+1) {
+    clear: none;
+	}
+
+	.container:nth-child(4n+1) {
+    clear: left;
+	}
+
+}

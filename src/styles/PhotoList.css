@@ -1,0 +1,12 @@
+.loading {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loading h3 {
+  font-size: 3em;
+}
+
+.loading p {
+  font-size: 1.4em;
+}
